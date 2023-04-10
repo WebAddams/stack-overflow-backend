@@ -27,6 +27,6 @@ export const updateProfile = async (req, res) => {
         res.status(200).json(updatedProfile)
     } catch (error) {
         console.log(error)
-        res.status(409).json({ message: error.message })
+        res.status(405).json({ message: error.message })
     }
 }
